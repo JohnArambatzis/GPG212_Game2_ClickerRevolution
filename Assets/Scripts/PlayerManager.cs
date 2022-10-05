@@ -10,6 +10,7 @@ public class PlayerManager : MonoBehaviour
     public float damage = 1;
 
     public TextMeshProUGUI goldAmountText;
+    public TextMeshProUGUI clickDamageText;
 
     public bool updateVariables = false;
 
@@ -32,5 +33,6 @@ public class PlayerManager : MonoBehaviour
     public void UpdateVariables()
     {
         goldAmountText.text = gold.ToString();
+        clickDamageText.text = damage.ToString();
     }
 }

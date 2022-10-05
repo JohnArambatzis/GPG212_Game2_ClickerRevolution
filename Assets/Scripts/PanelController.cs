@@ -8,6 +8,7 @@ public class PanelController : MonoBehaviour
 
     public GameObject pausePanel;
     public GameObject mainShopPanel;
+    public GameObject levelsPanel;
 
 
     void Start()
@@ -39,17 +40,23 @@ public class PanelController : MonoBehaviour
 
             pausePanel.SetActive(false);
             mainShopPanel.SetActive(false);
+            levelsPanel.SetActive(false);
         }
     }
 
     public void PausePanel()
     {
         isPaused = true;
-        mainShopPanel.SetActive(true);
+        pausePanel.SetActive(true);
     }
     public void MainShop()
     {
         isPaused = true;
-        pausePanel.SetActive(true);
+        mainShopPanel.SetActive(true);
+    }
+    public void Levels()
+    {
+        isPaused = true;
+        levelsPanel.SetActive(true);
     }
 }
