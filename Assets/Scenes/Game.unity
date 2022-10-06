@@ -906,7 +906,7 @@ GameObject:
   - component: {fileID: 252643564}
   m_Layer: 0
   m_Name: EGO Holder Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8119,6 +8119,10 @@ PrefabInstance:
     - target: {fileID: 9160042640936528120, guid: 837078e3a61ac3a4c9bf7cc24d242e4a, type: 3}
       propertyPath: m_Name
       value: Enemy1 Ghost (Canvas)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9160042640936528120, guid: 837078e3a61ac3a4c9bf7cc24d242e4a, type: 3}
+      propertyPath: m_TagString
+      value: Enemy1
       objectReference: {fileID: 0}
     - target: {fileID: 9160042640936528121, guid: 837078e3a61ac3a4c9bf7cc24d242e4a, type: 3}
       propertyPath: player

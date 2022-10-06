@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 818084138779350197}
   m_Layer: 5
   m_Name: Enemy10 Ghost (Canvas)
-  m_TagString: Untagged
+  m_TagString: Enemy10
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

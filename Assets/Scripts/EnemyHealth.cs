@@ -15,7 +15,7 @@ public class EnemyHealth : MonoBehaviour
 
     void Start()
     {
-        
+        player = GameObject.FindWithTag("Player");
     }
 
     void Update()

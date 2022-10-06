@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 2243332473789966587}
   m_Layer: 5
   m_Name: Enemy7 Ghost (Canvas)
-  m_TagString: Untagged
+  m_TagString: Enemy7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
