@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -14,6 +15,17 @@ public class EnemySpawner : MonoBehaviour
     public GameObject levelEight;
     public GameObject levelNine;
     public GameObject levelTen;
+
+    public GameObject levelOneButton;
+    public GameObject levelTwoButton;
+    public GameObject levelThreeButton;
+    public GameObject levelFourButton;
+    public GameObject levelFiveButton;
+    public GameObject levelSixButton;
+    public GameObject levelSevenButton;
+    public GameObject levelEightButton;
+    public GameObject levelNineButton;
+    public GameObject levelTenButton;
 
     public float currentLevel = 1;
 
@@ -43,6 +55,87 @@ public class EnemySpawner : MonoBehaviour
             SpawnNewEnemy();
 
             enemySpawnerTest = false;
+        }
+
+        if (currentLevel == 1)
+        {
+            levelOneButton.GetComponent<Button>().interactable = false;
+        }
+        if (currentLevel != 1)
+        {
+            levelOneButton.GetComponent<Button>().interactable = true;
+        }
+        if (currentLevel == 2)
+        {
+            levelTwoButton.GetComponent<Button>().interactable = false;
+        }
+        if (currentLevel != 2 && levelTwoUnlock == true)
+        {
+            levelTwoButton.GetComponent<Button>().interactable = true;
+        }
+        if (currentLevel == 3)
+        {
+            levelThreeButton.GetComponent<Button>().interactable = false;
+        }
+        if (currentLevel != 3 && levelThreeUnlock == true)
+        {
+            levelThreeButton.GetComponent<Button>().interactable = true;
+        }
+        if (currentLevel == 4)
+        {
+            levelFourButton.GetComponent<Button>().interactable = false;
+        }
+        if (currentLevel != 4 && levelFourUnlock == true)
+        {
+            levelFourButton.GetComponent<Button>().interactable = true;
+        }
+        if (currentLevel == 5)
+        {
+            levelFiveButton.GetComponent<Button>().interactable = false;
+        }
+        if (currentLevel != 5 && levelFiveUnlock == true)
+        {
+            levelFiveButton.GetComponent<Button>().interactable = true;
+        }
+        if (currentLevel == 6)
+        {
+            levelSixButton.GetComponent<Button>().interactable = false;
+        }
+        if (currentLevel != 6 && levelSixUnlock == true)
+        {
+            levelSixButton.GetComponent<Button>().interactable = true;
+        }
+        if (currentLevel == 7)
+        {
+            levelSevenButton.GetComponent<Button>().interactable = false;
+        }
+        if (currentLevel != 7 && levelSevenUnlock == true)
+        {
+            levelSevenButton.GetComponent<Button>().interactable = true;
+        }
+        if (currentLevel == 8)
+        {
+            levelEightButton.GetComponent<Button>().interactable = false;
+        }
+        if (currentLevel != 8 && levelEightUnlock == true)
+        {
+            levelEightButton.GetComponent<Button>().interactable = true;
+        }
+        if (currentLevel == 9)
+        {
+            levelNineButton.GetComponent<Button>().interactable = false;
+        }
+        if (currentLevel != 9 && levelNineUnlock == true)
+        {
+            levelNineButton.GetComponent<Button>().interactable = true;
+        }
+        if (currentLevel == 10)
+        {
+            levelTenButton.GetComponent<Button>().interactable = false;
+        }
+        if (currentLevel != 10 && levelTenUnlock == true)
+        {
+            levelTenButton.GetComponent<Button>().interactable = true;
         }
     }
 
@@ -90,5 +183,46 @@ public class EnemySpawner : MonoBehaviour
         {
             Instantiate(levelTen);
         }
+    }
+
+    public void LevelOne()
+    {
+        currentLevel = 1;
+    }
+    public void LevelTwo()
+    {
+        currentLevel = 2;
+    }
+    public void LevelThree()
+    {
+        currentLevel = 3;
+    }
+    public void LevelFour()
+    {
+        currentLevel = 4;
+    }
+    public void LevelFive()
+    {
+        currentLevel = 5;
+    }
+    public void LevelSix()
+    {
+        currentLevel = 6;
+    }
+    public void LevelSeven()
+    {
+        currentLevel = 7;
+    }
+    public void LevelEight()
+    {
+        currentLevel = 8;
+    }
+    public void LevelNine()
+    {
+        currentLevel = 9;
+    }
+    public void LevelTen()
+    {
+        currentLevel = 10;
     }
 }
