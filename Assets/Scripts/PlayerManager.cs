@@ -8,9 +8,12 @@ public class PlayerManager : MonoBehaviour
 {
     public float gold = 0;
     public float damage = 1;
+    public float autoClickerDamage = 0;
+    public float autoClickerTimer = 1;
 
     public TextMeshProUGUI goldAmountText;
     public TextMeshProUGUI clickDamageText;
+    public TextMeshProUGUI autoClickerDamageText;
 
     public bool updateVariables = false;
 
@@ -27,6 +30,11 @@ public class PlayerManager : MonoBehaviour
             UpdateVariables();
             updateVariables = false;
         }
+
+        if (autoClickerTimer > 0)
+        {
+            autoClickerTimer -= Time.deltaTime;
+        }
     }
 
 
@@ -34,5 +42,6 @@ public class PlayerManager : MonoBehaviour
     {
         goldAmountText.text = gold.ToString();
         clickDamageText.text = damage.ToString();
+        autoClickerDamageText.text = autoClickerDamage.ToString();
     }
 }

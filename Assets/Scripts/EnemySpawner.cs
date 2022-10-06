@@ -64,6 +64,7 @@ public class EnemySpawner : MonoBehaviour
         if (currentLevel != 1)
         {
             levelOneButton.GetComponent<Button>().interactable = true;
+            Destroy(GameObject.FindWithTag("Enemy1"));
         }
         if (currentLevel == 2)
         {
@@ -72,6 +73,7 @@ public class EnemySpawner : MonoBehaviour
         if (currentLevel != 2 && levelTwoUnlock == true)
         {
             levelTwoButton.GetComponent<Button>().interactable = true;
+            Destroy(GameObject.FindWithTag("Enemy2"));
         }
         if (currentLevel == 3)
         {
@@ -80,6 +82,7 @@ public class EnemySpawner : MonoBehaviour
         if (currentLevel != 3 && levelThreeUnlock == true)
         {
             levelThreeButton.GetComponent<Button>().interactable = true;
+            Destroy(GameObject.FindWithTag("Enemy3"));
         }
         if (currentLevel == 4)
         {
@@ -88,6 +91,7 @@ public class EnemySpawner : MonoBehaviour
         if (currentLevel != 4 && levelFourUnlock == true)
         {
             levelFourButton.GetComponent<Button>().interactable = true;
+            Destroy(GameObject.FindWithTag("Enemy4"));
         }
         if (currentLevel == 5)
         {
@@ -96,6 +100,7 @@ public class EnemySpawner : MonoBehaviour
         if (currentLevel != 5 && levelFiveUnlock == true)
         {
             levelFiveButton.GetComponent<Button>().interactable = true;
+            Destroy(GameObject.FindWithTag("Enemy5"));
         }
         if (currentLevel == 6)
         {
@@ -104,6 +109,7 @@ public class EnemySpawner : MonoBehaviour
         if (currentLevel != 6 && levelSixUnlock == true)
         {
             levelSixButton.GetComponent<Button>().interactable = true;
+            Destroy(GameObject.FindWithTag("Enemy6"));
         }
         if (currentLevel == 7)
         {
@@ -112,6 +118,7 @@ public class EnemySpawner : MonoBehaviour
         if (currentLevel != 7 && levelSevenUnlock == true)
         {
             levelSevenButton.GetComponent<Button>().interactable = true;
+            Destroy(GameObject.FindWithTag("Enemy7"));
         }
         if (currentLevel == 8)
         {
@@ -120,6 +127,7 @@ public class EnemySpawner : MonoBehaviour
         if (currentLevel != 8 && levelEightUnlock == true)
         {
             levelEightButton.GetComponent<Button>().interactable = true;
+            Destroy(GameObject.FindWithTag("Enemy8"));
         }
         if (currentLevel == 9)
         {
@@ -128,6 +136,7 @@ public class EnemySpawner : MonoBehaviour
         if (currentLevel != 9 && levelNineUnlock == true)
         {
             levelNineButton.GetComponent<Button>().interactable = true;
+            Destroy(GameObject.FindWithTag("Enemy9"));
         }
         if (currentLevel == 10)
         {
@@ -136,6 +145,7 @@ public class EnemySpawner : MonoBehaviour
         if (currentLevel != 10 && levelTenUnlock == true)
         {
             levelTenButton.GetComponent<Button>().interactable = true;
+            Destroy(GameObject.FindWithTag("Enemy10"));
         }
     }
 
@@ -188,41 +198,51 @@ public class EnemySpawner : MonoBehaviour
     public void LevelOne()
     {
         currentLevel = 1;
+        SpawnNewEnemy();
     }
     public void LevelTwo()
     {
         currentLevel = 2;
+        SpawnNewEnemy();
     }
     public void LevelThree()
     {
         currentLevel = 3;
+        SpawnNewEnemy();
     }
     public void LevelFour()
     {
         currentLevel = 4;
+        SpawnNewEnemy();
     }
     public void LevelFive()
     {
         currentLevel = 5;
+        SpawnNewEnemy();
     }
     public void LevelSix()
     {
         currentLevel = 6;
+        SpawnNewEnemy();
     }
     public void LevelSeven()
     {
         currentLevel = 7;
+        SpawnNewEnemy();
     }
     public void LevelEight()
     {
         currentLevel = 8;
+        SpawnNewEnemy();
     }
     public void LevelNine()
     {
         currentLevel = 9;
+        SpawnNewEnemy();
     }
     public void LevelTen()
     {
         currentLevel = 10;
+        SpawnNewEnemy();
     }
 }

@@ -26,7 +26,20 @@ public class EnemyHealth : MonoBehaviour
 
             enemyHealth = enemyHealth - player.GetComponent<PlayerManager>().damage;
             enemyHealthText.text = enemyHealth.ToString();
+
         }
+        if (player.GetComponent<PlayerManager>().autoClickerTimer <= 0 && player.GetComponent<PanelController>().isPaused == false && enemyHealth > 0)
+        {
+            Debug.Log("Auto Clicker Attacked");
+
+            enemyHealth = enemyHealth - player.GetComponent<PlayerManager>().autoClickerDamage;
+            player.GetComponent<PlayerManager>().autoClickerTimer = 1;
+            enemyHealthText.text = enemyHealth.ToString();
+        }
+
+
+
+
 
         if (enemyHealth <= 0)
         {
